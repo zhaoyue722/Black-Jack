@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		586425701A9174C900BEA5AD /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5864256F1A9174C900BEA5AD /* Game.swift */; };
+		58965FA81A90FD440017B246 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58965FA71A90FD440017B246 /* Player.swift */; };
+		58965FAA1A913A1A0017B246 /* Dealer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58965FA91A913A1A0017B246 /* Dealer.swift */; };
+		58B0BFD01A917C85002AACAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B0BFCF1A917C85002AACAC /* ViewController.swift */; };
 		58DA54ED1A8FD56800B4DA6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DA54EC1A8FD56800B4DA6C /* AppDelegate.swift */; };
-		58DA54EF1A8FD56800B4DA6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DA54EE1A8FD56800B4DA6C /* ViewController.swift */; };
 		58DA54F21A8FD56800B4DA6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58DA54F01A8FD56800B4DA6C /* Main.storyboard */; };
 		58DA54F41A8FD56800B4DA6C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58DA54F31A8FD56800B4DA6C /* Images.xcassets */; };
 		58DA54F71A8FD56800B4DA6C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58DA54F51A8FD56800B4DA6C /* LaunchScreen.xib */; };
 		58DA55031A8FD56800B4DA6C /* Black_Jack2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DA55021A8FD56800B4DA6C /* Black_Jack2Tests.swift */; };
+		58DA550E1A8FF76A00B4DA6C /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DA550D1A8FF76A00B4DA6C /* Deck.swift */; };
+		58DA55101A8FFB4400B4DA6C /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DA550F1A8FFB4400B4DA6C /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +31,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5864256F1A9174C900BEA5AD /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		58965FA71A90FD440017B246 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		58965FA91A913A1A0017B246 /* Dealer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dealer.swift; sourceTree = "<group>"; };
+		58B0BFCF1A917C85002AACAC /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		58DA54E71A8FD56800B4DA6C /* Black Jack2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Black Jack2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58DA54EB1A8FD56800B4DA6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58DA54EC1A8FD56800B4DA6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		58DA54EE1A8FD56800B4DA6C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		58DA54F11A8FD56800B4DA6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		58DA54F31A8FD56800B4DA6C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		58DA54F61A8FD56800B4DA6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		58DA54FC1A8FD56800B4DA6C /* Black Jack2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Black Jack2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58DA55011A8FD56800B4DA6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58DA55021A8FD56800B4DA6C /* Black_Jack2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Black_Jack2Tests.swift; sourceTree = "<group>"; };
+		58DA550D1A8FF76A00B4DA6C /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		58DA550F1A8FFB4400B4DA6C /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +87,17 @@
 		58DA54E91A8FD56800B4DA6C /* Black Jack2 */ = {
 			isa = PBXGroup;
 			children = (
+				58B0BFCF1A917C85002AACAC /* ViewController.swift */,
 				58DA54EC1A8FD56800B4DA6C /* AppDelegate.swift */,
-				58DA54EE1A8FD56800B4DA6C /* ViewController.swift */,
 				58DA54F01A8FD56800B4DA6C /* Main.storyboard */,
 				58DA54F31A8FD56800B4DA6C /* Images.xcassets */,
 				58DA54F51A8FD56800B4DA6C /* LaunchScreen.xib */,
 				58DA54EA1A8FD56800B4DA6C /* Supporting Files */,
+				58DA550F1A8FFB4400B4DA6C /* Card.swift */,
+				58965FA71A90FD440017B246 /* Player.swift */,
+				58DA550D1A8FF76A00B4DA6C /* Deck.swift */,
+				58965FA91A913A1A0017B246 /* Dealer.swift */,
+				5864256F1A9174C900BEA5AD /* Game.swift */,
 			);
 			path = "Black Jack2";
 			sourceTree = "<group>";
@@ -212,8 +227,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58DA54EF1A8FD56800B4DA6C /* ViewController.swift in Sources */,
+				58DA550E1A8FF76A00B4DA6C /* Deck.swift in Sources */,
+				58965FAA1A913A1A0017B246 /* Dealer.swift in Sources */,
+				586425701A9174C900BEA5AD /* Game.swift in Sources */,
+				58965FA81A90FD440017B246 /* Player.swift in Sources */,
+				58B0BFD01A917C85002AACAC /* ViewController.swift in Sources */,
 				58DA54ED1A8FD56800B4DA6C /* AppDelegate.swift in Sources */,
+				58DA55101A8FFB4400B4DA6C /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +427,7 @@
 				58DA55081A8FD56800B4DA6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		58DA55091A8FD56800B4DA6C /* Build configuration list for PBXNativeTarget "Black Jack2Tests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +436,7 @@
 				58DA550B1A8FD56800B4DA6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
