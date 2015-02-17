@@ -34,6 +34,13 @@ class Player {
         {
             intSum += each.rank.values.first
         }
+        if(intSum <= 11){
+            for i in 0..<cards.count {
+                if(cards[i].rank.simpleDescription() == "A"){
+                    intSum += cards[i].rank.values.second! - 1;
+                }
+            }
+        }
         var strSum = "\(intSum)"
         return (intSum,strSum)  //why return two?
     }

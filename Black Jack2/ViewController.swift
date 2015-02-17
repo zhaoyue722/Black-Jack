@@ -94,6 +94,7 @@ class ViewController: UIViewController {
         hitButton.hidden = false
         standButton.hidden = false
         blackjack.player.stand = false
+        //dealerLabels[0].hidden = true
         //dealerLabels.removeAll(keepCapacity: false)
         for i in 0..<2 {dealerLabels[i].text = " "}
         for i in 0..<5 {playerLabels[i].text = " "}
@@ -136,34 +137,42 @@ class ViewController: UIViewController {
         chipBalance.text = "\(cntchip)"
         //var current : Int = cntchip - betInput.text.toInt()!
         //chipBalance.text = "\(current)"
-        
+        dealerLabels[0].hidden = true
         
     }
     
     func showScore(playerScore: Int, dealerScore: Int) -> String {
+        
         if (playerScore > 21) {
+            
             return ("Bust!")
+            
         }
         
         if (dealerScore > 21) {
+            dealerLabels[0].hidden = false
             cntchip += 2*betInput.text.toInt()!
             return ("Dealer bust! You Win!")
         }
         
         if (playerScore == 21 && dealerScore != 21) {
+            dealerLabels[0].hidden = false
             cntchip += 4*betInput.text.toInt()!
-            return ("Awesome! You got a Blak Jack!😄")
+            return ("😄Awesome! You got a Blak Jack!")
         }
         
         if (playerScore > dealerScore) {
+            dealerLabels[0].hidden = false
             cntchip += 2*betInput.text.toInt()!
             return ("You win!")
         }
         
         if (playerScore < dealerScore) {
+            dealerLabels[0].hidden = false
             return ("Unluck😔")
         }
         cntchip += betInput.text.toInt()!
+        dealerLabels[0].hidden = false
         return ("Push")
         
         
