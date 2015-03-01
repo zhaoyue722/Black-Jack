@@ -1,4 +1,5 @@
 # Black-Jack
+PS: When tested, the hardware needs to be rotated left or right.
 Game Guide
 
 First, enter the amout of the chips you want to bet，then touch the bet button;
